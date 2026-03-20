@@ -7,7 +7,7 @@ Requirements:
 
 Non functional requirements:
 - Add preview for homepage screen
-- Use navigation compose to build composable screens
+- Use navigation to go/return from one view to the other
 
 Unit tests:
 - Should cover all points in the requirements section

@@ -11,7 +11,9 @@ import SwiftUI
 struct GreetingAppApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationStack {
+                HomepageView()
+            }
         }
     }
 }
