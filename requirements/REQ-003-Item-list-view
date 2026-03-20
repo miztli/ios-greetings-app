@@ -1,0 +1,15 @@
+Requirements:
+
+- ItemList should be a new screen
+- Background screen should cover all width and height and should be white color
+- The screen should be scrollable when elements on it overflow the screen large size
+- Add a centered title on the top: Item List
+- Display a list of 100 different pokemon names
+- Button from homepage with id list-view-button-id should navigate to this new screen
+- Add a small button to navigate back to homepage at the top-left side of the screen
+
+Non functional requirements:
+- Add preview for ItemList screen
+
+Unit tests:
+- Should cover all points in the requirements section

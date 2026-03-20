@@ -1,0 +1,8 @@
+Requirements:
+
+- Add a new grey centered button below the homepage screen title
+- Button id should be: list-view-button-id
+- Button label should be: To list view
+
+Unit tests:
+- Should cover all points in the requirements section

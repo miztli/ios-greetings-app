@@ -1,0 +1,13 @@
+Requirements:
+
+- Homepage screen should be displayed after app starts
+- Background screen should cover all width and height and should be white color
+- The screen should be scrollable when elements on it overflow the screen large size
+- Add a centered title on the top: Homepage
+
+Non functional requirements:
+- Add preview for homepage screen
+- Use navigation compose to build composable screens
+
+Unit tests:
+- Should cover all points in the requirements section
