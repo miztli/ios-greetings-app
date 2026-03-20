@@ -19,11 +19,13 @@ struct HomepageView: View {
                     .multilineTextAlignment(.center)
                     .background(Color(.systemGray6))
                     .accessibilityIdentifier(homepageLabel)
-                Button(buttonLabel) {}
-                    .frame(maxWidth: .infinity)
-                    .tint(.gray)
-                    .buttonStyle(.borderedProminent)
-                    .accessibilityIdentifier(buttonId)
+                NavigationLink(destination: ItemListView()) {
+                    Text(buttonLabel)
+                        .frame(maxWidth: .infinity)
+                }
+                .tint(.gray)
+                .buttonStyle(.borderedProminent)
+                .accessibilityIdentifier(buttonId)
             }
             .padding()
         }

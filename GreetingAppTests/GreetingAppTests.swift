@@ -30,3 +30,27 @@ struct HomepageViewTests {
     }
 
 }
+
+struct ItemListViewTests {
+
+    @Test func itemListViewCanBeInstantiated() {
+        let view = ItemListView()
+        #expect(view != nil)
+    }
+
+    @Test func itemListTitleIsCorrect() {
+        let view = ItemListView()
+        #expect(view.title == "Item List")
+    }
+
+    @Test func itemListHas100Pokemon() {
+        let view = ItemListView()
+        #expect(view.pokemonNames.count == 100)
+    }
+
+    @Test func itemListPokemonNamesAreUnique() {
+        let view = ItemListView()
+        #expect(Set(view.pokemonNames).count == 100)
+    }
+
+}
