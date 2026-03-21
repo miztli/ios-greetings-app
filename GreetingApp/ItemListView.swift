@@ -32,6 +32,8 @@ struct ItemListView: View {
     ]
 
     var body: some View {
+        let startTime = Date()
+        
         ScrollView {
             VStack {
                 Text(title)
@@ -41,10 +43,17 @@ struct ItemListView: View {
                     .background(Color(.systemGray6))
                     .accessibilityIdentifier(titleId)
                 ForEach(pokemonNames, id: \.self) { name in
-                    Text(name)
+                    // Uncomment for analysing performance
+                    // Thread.sleep(forTimeInterval: 0.005)
+                    return Text(name)
                         .frame(maxWidth: .infinity)
                         .multilineTextAlignment(.center)
                 }
+            }
+            .onAppear {
+                let endTime = Date()
+                let timeInterval: TimeInterval = endTime.timeIntervalSince(startTime) * 1000
+                print("Time to first render: \(timeInterval) ms")
             }
             .padding()
         }
